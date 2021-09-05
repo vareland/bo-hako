@@ -27,6 +27,9 @@ def main() -> None:
             print('quit')
             print('---')
             break
+        if not len(date) == 6:
+            continue
+
         year: int = int(date[0:4])
         month: int = int(date[4:6])
 
