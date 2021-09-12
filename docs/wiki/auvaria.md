@@ -56,6 +56,7 @@
 
 - [ヴェニス・コンプレックス](http://tanstaafl.tokyo/wiki-contents/ヴェニス・コンプレックス/)
 - [大石動帝国](http://tanstaafl.tokyo/wiki-contents/大石動帝国/)
+- [ナルガ自治政府](http://tanstaafl.tokyo/wiki-contents/ナルガ自治政府※/)
 - [民族自治軍管区ハルィチナー](http://tanstaafl.tokyo/wiki-contents/民族自治軍管区ハルィチナー/)
 - [ヘルトジブリール社会主義共和国](http://tanstaafl.tokyo/wiki-contents/ヘルトジブリール社会主義共和国/)
 - [リブル民主主義人民共和国](http://tanstaafl.tokyo/wiki-contents/リブル民主主義人民共和国/)
