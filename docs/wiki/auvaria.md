@@ -45,7 +45,21 @@
 # 政治
 ## 国際関係
 ### 王冠連合
+オーヴァリア大公領は、以下の諸邦と共に王冠連合を構成している。
+これらの諸邦は王冠連合の諸邦の地位に関する声明に基づき、外交権等をオーヴァリア大公領と共同で行使している。
+
+- [クラカス聖王冠領](http://tanstaafl.tokyo/wiki-contents/クラカス聖王冠領/)
+- [ショッテン＝ローテン王国](http://tanstaafl.tokyo/wiki-contents/ショッテン＝ローテン王国/)
+
 ### 外交関係を有する国家
+以下の国家は、王冠連合共通政府が公式に外交関係を設立した国家の一覧である。
+
+- [ヴェニス・コンプレックス](http://tanstaafl.tokyo/wiki-contents/ヴェニス・コンプレックス/)
+- [大石動帝国](http://tanstaafl.tokyo/wiki-contents/大石動帝国/)
+- [民族自治軍管区ハルィチナー](http://tanstaafl.tokyo/wiki-contents/民族自治軍管区ハルィチナー/)
+- [ヘルトジブリール社会主義共和国](http://tanstaafl.tokyo/wiki-contents/ヘルトジブリール社会主義共和国/)
+- [リブル民主主義人民共和国](http://tanstaafl.tokyo/wiki-contents/リブル民主主義人民共和国/)
+
 
 # 歴史
 
