@@ -60,6 +60,7 @@
 - [民族自治軍管区ハルィチナー](http://tanstaafl.tokyo/wiki-contents/民族自治軍管区ハルィチナー/)
 - [ヘルトジブリール社会主義共和国](http://tanstaafl.tokyo/wiki-contents/ヘルトジブリール社会主義共和国/)
 - [リブル民主主義人民共和国](http://tanstaafl.tokyo/wiki-contents/リブル民主主義人民共和国/)
+- [レゴリス帝国](http://tanstaafl.tokyo/wiki-contents/レゴリス帝国/)
 
 
 # 歴史
