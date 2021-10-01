@@ -2,8 +2,10 @@ import datetime
 import requests
 import bs4
 
+# 更新間隔（hours）
 INTERVAL: int = 4
-FIRST_UPDATE_HOUR: int = 0
+# その日の最初の更新時間
+FIRST_UPDATE_HOUR: int = 1
 
 
 def get_current_turn() -> int:
@@ -12,8 +14,8 @@ def get_current_turn() -> int:
     """
     r = requests.get('http://tanstafl.sakura.ne.jp/trade/hako-main.php')
     soup: bs4.BeautifulSoup = bs4.BeautifulSoup(r.content, "html.parser")
-    raw: str = soup.find('h2', 'Turn').text
-    current_turn = raw[8:13]
+    raw_str: str = soup.find('h2', 'Turn').text
+    current_turn: str = raw_str[8:13]
     if not current_turn.isdigit():
         raise ValueError
     return int(current_turn)
@@ -27,7 +29,7 @@ def get_last_updated_time(current_datetime: datetime.datetime) -> datetime.datet
     current_date: datetime.datetime = current_datetime.combine(current_datetime, datetime.time(0))
     current_hour: int = current_datetime.hour
     # その日に更新された回数
-    how_many_times_updated = (current_hour//INTERVAL)
+    how_many_times_updated: int = (current_hour - FIRST_UPDATE_HOUR)//INTERVAL
     # 更新された時刻
     last_updated_hour: int = FIRST_UPDATE_HOUR + (how_many_times_updated * INTERVAL)
 
