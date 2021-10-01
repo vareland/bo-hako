@@ -5,7 +5,7 @@ import bs4
 # 更新間隔（hours）
 INTERVAL: int = 4
 # その日の最初の更新時間
-FIRST_UPDATE_HOUR: int = 1
+FIRST_UPDATE_HOUR: int = 0
 
 
 def get_current_turn() -> int:
