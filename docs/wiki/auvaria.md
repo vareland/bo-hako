@@ -55,13 +55,25 @@
 以下の国家は、王冠連合共通政府が公式に外交関係を設立した国家の一覧である。
 
 - [ヴェニス・コンプレックス](http://tanstaafl.tokyo/wiki-contents/ヴェニス・コンプレックス/)
+- [セリティヌム共和政](http://tanstaafl.tokyo/wiki-contents/セリティヌム共和政/)
 - [大石動帝国](http://tanstaafl.tokyo/wiki-contents/大石動帝国/)
 - [ナルガ自治政府](http://tanstaafl.tokyo/wiki-contents/ナルガ自治政府/)
-- [民族自治軍管区ハルィチナー](http://tanstaafl.tokyo/wiki-contents/民族自治軍管区ハルィチナー/)
+- [普蘭合衆国](http://tanstaafl.tokyo/wiki-contents/普蘭合衆国/)
 - [ヘルトジブリール社会主義共和国](http://tanstaafl.tokyo/wiki-contents/ヘルトジブリール社会主義共和国/)
+- [民族自治軍管区ハルィチナー](http://tanstaafl.tokyo/wiki-contents/民族自治軍管区ハルィチナー/)
 - [リブル民主主義人民共和国](http://tanstaafl.tokyo/wiki-contents/リブル民主主義人民共和国/)
 - [レゴリス帝国](http://tanstaafl.tokyo/wiki-contents/レゴリス帝国/)
 
+
+# 社会
+## ヴィルリン新聞
+オーヴァリア最古の新聞であり、国を代表するクオリティペーパーの一つとされる。
+
+## 青い鳥
+オーヴァリアの国立博物館より古代遺物を盗み出した秘密結社。
+ノルト人又は「ヴァレフォール人」至上主義を掲げているとされる。
+世界各国に組織が存在し、中央本部の存在は公的に確認されていない。
+その詳細は不明であるが、同名の団体が魔術又は錬金術に関係した書籍を頒布していたことが確認されている。
 
 # 歴史
 
