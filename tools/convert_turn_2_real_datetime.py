@@ -29,7 +29,7 @@ def get_last_updated_time(current_datetime: datetime.datetime) -> datetime.datet
     current_date: datetime.datetime = current_datetime.combine(current_datetime, datetime.time(0))
     current_hour: int = current_datetime.hour
     # その日に更新された回数
-    how_many_times_updated: int = (current_hour - FIRST_UPDATE_HOUR)//INTERVAL
+    how_many_times_updated: int = (current_hour - FIRST_UPDATE_HOUR) // INTERVAL
     # 更新された時刻
     last_updated_hour: int = FIRST_UPDATE_HOUR + (how_many_times_updated * INTERVAL)
 
@@ -50,11 +50,11 @@ def calc_datetime(target_turn: int, current_turn: int, last_updated_at: datetime
 
 
 def main() -> None:
-    current_datetime: datetime.datetime = datetime.datetime.now()
-    last_updated_at = get_last_updated_time(current_datetime)
+    current_datetime: datetime.datetime = datetime.datetime.now().replace(microsecond=0)
+    last_updated_at: datetime.datetime = get_last_updated_time(current_datetime)
     current_turn: int = get_current_turn()
 
-    print(f'システム日時:{str(current_datetime.replace(microsecond=0))}')
+    print(f'システム日時:{str(current_datetime)}')
     print(f'最終更新日時:{str(last_updated_at)}')
     print(f'現在のターン:{current_turn}')
     print('------')
