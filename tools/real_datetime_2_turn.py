@@ -8,7 +8,7 @@ def calc_turn(ymd: str, update_count: int, current_turn: int, last_updated_at: d
     year: int = int(ymd[:4])
     month: int = int(ymd[4:6])
     day: int = int(ymd[6:])
-    target_ymd: datetime.datetime = datetime.datetime(year, month, day)
+    target_ymd: datetime.datetime = datetime.datetime(year, month, day, hour=util.FIRST_UPDATE_HOUR)
     # 対象年月日と最終更新ターンとの差を取得
     time_del: datetime.timedelta = target_ymd - last_updated_at
     # 経過ターン数を取得
