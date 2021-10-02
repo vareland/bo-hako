@@ -15,6 +15,9 @@ GEJUN: str = '下旬'
 
 
 def get_current_datetime() -> datetime.datetime:
+    """
+    現在時刻の日時（秒まで）を返す
+    """
     return datetime.datetime.now().replace(microsecond=0)
 
 
@@ -47,6 +50,9 @@ def get_last_updated_time(current_datetime: datetime.datetime) -> datetime.datet
 
 
 def convert_turn_2_date(turn: int) -> str:
+    """
+    ターンをフリューゲル暦に変換する
+    """
     # 旬を取得。第1ターンは上旬
     if turn % 3 == 0:
         jun: str = GEJUN
