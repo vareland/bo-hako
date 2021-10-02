@@ -1,39 +1,5 @@
 import datetime
-import requests
-import bs4
-
-# 更新間隔（hours）
-INTERVAL: int = 4
-# その日の最初の更新時間
-FIRST_UPDATE_HOUR: int = 0
-
-
-def get_current_turn() -> int:
-    """
-    ゲーム本体から現在のターンを取得
-    """
-    r = requests.get('http://tanstafl.sakura.ne.jp/trade/hako-main.php')
-    soup: bs4.BeautifulSoup = bs4.BeautifulSoup(r.content, "html.parser")
-    raw_str: str = soup.find('h2', 'Turn').text
-    current_turn: str = raw_str[8:13]
-    if not current_turn.isdigit():
-        raise ValueError
-    return int(current_turn)
-
-
-def get_last_updated_time(current_datetime: datetime.datetime) -> datetime.datetime:
-    """
-    システム日時より最後に更新された時刻を取得
-    """
-    # datetime型から時刻部分を切り取る
-    current_date: datetime.datetime = current_datetime.combine(current_datetime, datetime.time(0))
-    current_hour: int = current_datetime.hour
-    # その日に更新された回数
-    how_many_times_updated: int = (current_hour - FIRST_UPDATE_HOUR) // INTERVAL
-    # 更新された時刻
-    last_updated_hour: int = FIRST_UPDATE_HOUR + (how_many_times_updated * INTERVAL)
-
-    return current_date + datetime.timedelta(hours=last_updated_hour)
+import util
 
 
 def calc_datetime(target_turn: int, current_turn: int, last_updated_at: datetime.datetime) -> datetime.datetime:
@@ -45,14 +11,14 @@ def calc_datetime(target_turn: int, current_turn: int, last_updated_at: datetime
     :return: 更新日時
     """
     turn_delta: int = target_turn - current_turn
-    time_del: datetime.timedelta = datetime.timedelta(hours=turn_delta * INTERVAL)
+    time_del: datetime.timedelta = datetime.timedelta(hours=turn_delta * util.INTERVAL)
     return last_updated_at + time_del
 
 
 def main() -> None:
-    current_datetime: datetime.datetime = datetime.datetime.now().replace(microsecond=0)
-    last_updated_at: datetime.datetime = get_last_updated_time(current_datetime)
-    current_turn: int = get_current_turn()
+    current_datetime: datetime.datetime = util.get_current_datetime()
+    last_updated_at: datetime.datetime = util.get_last_updated_time(current_datetime)
+    current_turn: int = util.get_current_turn()
 
     print(f'システム日時:{str(current_datetime)}')
     print(f'最終更新日時:{str(last_updated_at)}')
